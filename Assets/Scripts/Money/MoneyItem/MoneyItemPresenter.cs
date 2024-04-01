@@ -35,8 +35,8 @@ namespace RedAndBlue.Money
 
         public void Dispose()
         {
-            _view.Dispose();
             Reset();
+            _view.Dispose();
         }
 
         public void Reset()

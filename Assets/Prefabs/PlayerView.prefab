@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 1272828866444925806}
   - component: {fileID: 7716022331461692411}
   - component: {fileID: 1272828866444925792}
+  - component: {fileID: 630641935757557438}
   - component: {fileID: 1272828866444925807}
   m_Layer: 0
   m_Name: PlayerView
@@ -99,6 +100,8 @@ MonoBehaviour:
   PlayerModules:
   - {fileID: 1272828866444925792}
   - {fileID: 7716022331461692411}
+  - {fileID: 1272828866444925806}
+  - {fileID: 630641935757557438}
 --- !u!114 &1272828866444925806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +142,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rigidbody: {fileID: 1272828866444925807}
   Collider: {fileID: 1272828866340270737}
-  MoveSpeed: 10
+  MoveSpeed: 500
+  RotationSpeed: 10
+--- !u!114 &630641935757557438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272828866444925803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ea9255bbe9a24af691ed778f3624ad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerTransform: {fileID: 7389387601913047163}
+  TowerRotationSpeed: 999
 --- !u!54 &1272828866444925807
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -154,7 +172,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &1272828866686859130
 GameObject:
@@ -301,6 +319,12 @@ Transform:
 --- !u!95 &4666690967765396209 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 28a804806d3ed4385966750aa9c54c56,
+    type: 3}
+  m_PrefabInstance: {fileID: 1272828866404980576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7389387601913047163 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -637928109276037349, guid: 28a804806d3ed4385966750aa9c54c56,
     type: 3}
   m_PrefabInstance: {fileID: 1272828866404980576}
   m_PrefabAsset: {fileID: 0}

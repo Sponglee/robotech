@@ -12,6 +12,9 @@ namespace RedAndBlue.PlayerModules
 
         private PlayerInputModule _playerInput;
         private PlayerMovementModule _playerMovement;
+        private PlayerTowerModule _playerTower;
+        private PlayerAnimationModule _playerAnimation;
+
 
         public PlayerModulesPresenter(PlayerModulesViewBase view, IPlayerModulesModel model)
         {
@@ -46,6 +49,14 @@ namespace RedAndBlue.PlayerModules
                 case PlayerMovementModule playerMovement:
                     _playerMovement = playerMovement;
                     _playerMovement.Initialize(this);
+                    break;
+                case PlayerAnimationModule playerAnimation:
+                    _playerAnimation = playerAnimation;
+                    _playerAnimation.Initialize(this);
+                    break;
+                case PlayerTowerModule playerTower:
+                    _playerTower = playerTower;
+                    _playerTower.Initialize(this);
                     break;
             }
         }
