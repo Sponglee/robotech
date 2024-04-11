@@ -1,8 +1,11 @@
+using System;
 using RedAndBlue.PlayerModules;
 using UnityEngine;
 
 public class PlayerTowerModule : PlayerModuleViewBase
 {
+    public bool DebugEnabled = false;
+
     public Transform TowerTransform;
     public float TowerRotationSpeed = 10f;
 
@@ -10,20 +13,26 @@ public class PlayerTowerModule : PlayerModuleViewBase
 
     public override IPlayerModulesPresenter PlayerModules { get; protected set; }
 
+
     public override void Initialize(IPlayerModulesPresenter playerModulesPresenter)
     {
         PlayerModules = playerModulesPresenter;
 
-        PlayerModules.FrameUpdate += OnFrameUpdate;
+        PlayerModules.FixedUpdate += OnFixedUpdate;
     }
 
     public override void Dispose()
     {
-        PlayerModules.FrameUpdate -= OnFrameUpdate;
+        PlayerModules.FixedUpdate -= OnFixedUpdate;
     }
 
-    public override void OnFrameUpdate(float tick)
+    public override void OnFixedUpdate(float tick)
     {
+        if (!DebugEnabled)
+        {
+            return;
+        }
+
         RotateTower(lookDirection, tick);
     }
 

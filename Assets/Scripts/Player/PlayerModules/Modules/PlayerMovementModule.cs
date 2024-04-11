@@ -13,20 +13,24 @@ public class PlayerMovementModule : PlayerModuleViewBase
     {
         PlayerModules = playerModulesPresenter;
 
-        PlayerModules.FrameUpdate += OnFrameUpdate;
+        PlayerModules.FixedUpdate += OnFixedUpdate;
     }
 
     public override void Dispose()
     {
-        PlayerModules.FrameUpdate -= OnFrameUpdate;
+        PlayerModules.FixedUpdate -= OnFixedUpdate;
     }
 
-    public override void OnFrameUpdate(float tick)
+    public override void OnFixedUpdate(float tick)
     {
         var input = PlayerModules.GetInputValues();
 
-        MovePlayer(input, tick);
+        if (input == default)
+        {
+            return;
+        }
 
+        MovePlayer(input, tick);
         RotatePlayer(input, tick);
     }
 

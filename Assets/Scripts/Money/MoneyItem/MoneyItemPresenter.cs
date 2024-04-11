@@ -43,7 +43,6 @@ namespace RedAndBlue.Money
         {
             _model.IsActive = false;
             _movementFinishedCallback = null;
-            _view.gameObject.SetActive(false);
         }
 
         public void SetPosition(Vector3 position)

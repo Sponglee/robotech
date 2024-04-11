@@ -6,6 +6,7 @@ namespace RedAndBlue.PlayerModules
     public class PlayerModulesPresenter : IPlayerModulesPresenter
     {
         public event Action<float> FrameUpdate;
+        public event Action<float> FixedUpdate;
 
         private readonly IPlayerModulesModel _model;
         private readonly PlayerModulesViewBase _view;
@@ -36,6 +37,11 @@ namespace RedAndBlue.PlayerModules
         public void OnFrameUpdate(float tick)
         {
             FrameUpdate?.Invoke(tick);
+        }
+
+        public void OnFixedUpdate(float tick)
+        {
+            FixedUpdate?.Invoke(tick);
         }
 
         public void RegisterModule(PlayerModuleViewBase moduleViewBase)

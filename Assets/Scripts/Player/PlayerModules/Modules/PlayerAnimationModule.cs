@@ -14,15 +14,15 @@ public class PlayerAnimationModule : PlayerModuleViewBase
     {
         PlayerModules = playerModulesPresenter;
 
-        PlayerModules.FrameUpdate += OnFrameUpdate;
+        PlayerModules.FrameUpdate += OnFixedUpdate;
     }
 
     public override void Dispose()
     {
-        PlayerModules.FrameUpdate -= OnFrameUpdate;
+        PlayerModules.FrameUpdate -= OnFixedUpdate;
     }
 
-    public override void OnFrameUpdate(float tick)
+    public override void OnFixedUpdate(float tick)
     {
         var move = PlayerModules.GetInputValues();
 

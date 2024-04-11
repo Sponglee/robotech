@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace RedAndBlue.PlayerModules
@@ -39,6 +40,21 @@ namespace RedAndBlue.PlayerModules
             }
 
             PlayerModulesPresenter.OnFrameUpdate(Time.deltaTime);
+        }
+
+        private void FixedUpdate()
+        {
+            if (!_isInitialized)
+            {
+                return;
+            }
+
+            if (_isDisposed)
+            {
+                return;
+            }
+
+            PlayerModulesPresenter.OnFixedUpdate(Time.fixedDeltaTime);
         }
 
         public override void Dispose()

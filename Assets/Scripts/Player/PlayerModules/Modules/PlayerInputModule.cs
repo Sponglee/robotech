@@ -15,15 +15,15 @@ public class PlayerInputModule : PlayerModuleViewBase
     {
         PlayerModules = playerModulesPresenter;
 
-        PlayerModules.FrameUpdate += OnFrameUpdate;
+        PlayerModules.FrameUpdate += OnFixedUpdate;
     }
 
     public override void Dispose()
     {
-        PlayerModules.FrameUpdate -= OnFrameUpdate;
+        PlayerModules.FrameUpdate -= OnFixedUpdate;
     }
 
-    public override void OnFrameUpdate(float tick)
+    public override void OnFixedUpdate(float tick)
     {
         var moveHorizontal = Input.GetAxis("Horizontal");
         var moveVertical = Input.GetAxis("Vertical");
