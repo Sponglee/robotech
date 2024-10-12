@@ -1,4 +1,4 @@
-using RedAndBlue.PlayerModules;
+using Robotech.PlayerModules;
 using UnityEngine;
 
 public class PlayerAnimationModule : PlayerModuleViewBase

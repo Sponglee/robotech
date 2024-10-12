@@ -1,6 +1,6 @@
 using System;
 
-namespace RedAndBlue.Money
+namespace Robotech.Money
 {
     public interface IMoneyModel : IDisposable
     {

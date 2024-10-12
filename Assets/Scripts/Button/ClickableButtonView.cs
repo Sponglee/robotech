@@ -2,7 +2,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace RedAndBlue.Buttons
+namespace Robotech.Buttons
 {
     public class ClickableButtonView : ButtonViewBase
     {

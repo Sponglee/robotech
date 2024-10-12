@@ -1,4 +1,4 @@
-namespace RedAndBlue.Money
+namespace Robotech.Money
 {
     public class MoneyModel : IMoneyModel
     {

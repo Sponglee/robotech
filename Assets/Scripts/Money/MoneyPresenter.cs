@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RedAndBlue.Money
+namespace Robotech.Money
 {
     public class MoneyPresenter : IMoneyPresenter
     {

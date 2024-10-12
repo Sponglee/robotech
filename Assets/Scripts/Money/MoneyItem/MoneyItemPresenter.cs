@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace RedAndBlue.Money
+namespace Robotech.Money
 {
     public class MoneyItemPresenter : IMoneyItemPresenter
     {

@@ -1,4 +1,4 @@
-namespace RedAndBlue.Buttons
+namespace Robotech.Buttons
 {
     public enum ButtonType
     {

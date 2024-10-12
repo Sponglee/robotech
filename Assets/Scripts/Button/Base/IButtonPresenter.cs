@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace RedAndBlue.Buttons
+namespace Robotech.Buttons
 {
     public interface IButtonPresenter : IDisposable
     {

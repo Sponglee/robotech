@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace RedAndBlue.Buttons
+namespace Robotech.Buttons
 {
     public abstract class ButtonViewBase : MonoBehaviour, IDisposable
     {

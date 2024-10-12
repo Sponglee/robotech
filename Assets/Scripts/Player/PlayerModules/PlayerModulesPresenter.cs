@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace RedAndBlue.PlayerModules
+namespace Robotech.PlayerModules
 {
     public class PlayerModulesPresenter : IPlayerModulesPresenter
     {

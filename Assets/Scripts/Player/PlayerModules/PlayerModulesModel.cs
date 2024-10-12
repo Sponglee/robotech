@@ -1,4 +1,4 @@
-namespace RedAndBlue.PlayerModules
+namespace Robotech.PlayerModules
 {
     public class PlayerModulesModel : IPlayerModulesModel
     {

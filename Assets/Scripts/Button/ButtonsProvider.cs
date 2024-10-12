@@ -1,6 +1,6 @@
 using System;
 
-namespace RedAndBlue.Buttons
+namespace Robotech.Buttons
 {
     public class ButtonsProvider : IDisposable
     {

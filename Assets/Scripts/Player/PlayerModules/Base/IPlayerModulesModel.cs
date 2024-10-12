@@ -1,6 +1,6 @@
 using System;
 
-namespace RedAndBlue.PlayerModules
+namespace Robotech.PlayerModules
 {
     public interface IPlayerModulesModel : IDisposable
     {

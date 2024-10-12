@@ -1,6 +1,6 @@
 using System;
 
-namespace RedAndBlue.Buttons
+namespace Robotech.Buttons
 {
     [Serializable]
     public class ButtonData

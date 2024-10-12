@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace RedAndBlue.Money
+namespace Robotech.Money
 {
     public abstract class MoneyViewBase : MonoBehaviour, IDisposable
     {

@@ -2,7 +2,7 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
-namespace RedAndBlue.Money
+namespace Robotech.Money
 {
     public class MoneyView : MoneyViewBase
     {
